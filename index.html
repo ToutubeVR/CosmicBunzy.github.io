@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CosmicBunny's Bio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
         body {
             font-family: 'M PLUS Rounded 1c', Arial, sans-serif;
             margin: 0;
@@ -28,6 +28,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+
+            
         }
         .logo {
             width: 80px;
@@ -104,6 +107,35 @@
             height: 60px;
             resize: vertical;
         }
+// ...existing code...
+    <style>
+        // ...existing code...
+        .sticker {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #3b82f6, 0 0 20px #1d4ed8, 0 0 30px #1e40af, 0 0 40px #1e3a8a;
+            z-index: 10;
+        }
+
+        /* added: left-side tilted Miku GIF */
+        .miku-gif {
+            position: fixed;
+            left: 20px;
+            bottom: 30px;
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            transform: rotate(-8deg);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            z-index: 11;
+        }
+    </style>
+
+
     </style>
 </head>
 <body>
@@ -151,5 +183,7 @@
             </div>
         </div>
     <img src="images/miku 1.png" alt="Miku Sticker" class="sticker">
+    <img src="images/gif miku.gif" alt="Miku Sticker" class="miku-gif">
+    <img src="images/gif miku 2.gif" alt="Miku Sticker" class="header">
 </body>
 </html>
