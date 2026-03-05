@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <title>My Bio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Bungee', Arial, sans-serif;
+            color: #fff;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            background-image: url('images/checker board red bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 
+                inset 0 0 20px rgba(255, 0, 0, 1),
+                inset 0 0 30px rgba(255, 127, 0, 0.9),
+                inset 0 0 40px rgba(255, 255, 0, 0.8),
+                inset 0 0 50px rgba(0, 255, 0, 0.8),
+                inset 0 0 60px rgba(0, 0, 255, 0.9),
+                inset 0 0 70px rgba(75, 0, 130, 0.9),
+                inset 0 0 80px rgba(148, 0, 211, 0.8);
+        }
+        .bio-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, #660000, #ff0000);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 
+                0 0 15px rgba(255, 0, 0, 1),
+                0 0 25px rgba(255, 0, 0, 0.9),
+                0 0 35px rgba(255, 0, 0, 0.8),
+                0 0 45px rgba(255, 0, 0, 0.7),
+                0 0 55px rgba(255, 0, 0, 0.6),
+                0 0 65px rgba(220, 0, 0, 0.5),
+                0 0 75px rgba(180, 0, 0, 0.4);
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .rainbow-decoration {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 40px;
+            text-align: center;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            box-shadow: 
+                0 0 20px rgba(255, 0, 0, 0.9),
+                0 0 30px rgba(255, 127, 0, 0.8),
+                0 0 40px rgba(255, 255, 0, 0.7),
+                0 0 50px rgba(0, 255, 0, 0.7),
+                0 0 60px rgba(0, 0, 255, 0.8),
+                0 0 70px rgba(75, 0, 130, 0.8),
+                0 0 80px rgba(148, 0, 211, 0.7),
+                inset 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+        .rainbow-decoration h2 {
+            color: #fff;
+            text-shadow: 
+                0 0 10px rgba(255, 0, 0, 0.8),
+                0 0 20px rgba(0, 0, 255, 0.8);
+            font-size: 28px;
+            margin: 0;
+        }
+        .rainbow-decoration p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .floating-gif {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 200px;
+            height: 200px;
+            z-index: 10;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .tadc-gif {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            z-index: 10;
+            animation: tadc-move 4s ease-in-out infinite;
+        }
+        @keyframes tadc-move {
+            0%, 100% { transform: rotate(-10deg) translateY(0px); }
+            25% { transform: rotate(10deg) translateY(-5px); }
+            50% { transform: rotate(-5deg) translateY(-10px); }
+            75% { transform: rotate(5deg) translateY(-5px); }
+        }
+        .fnf-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+            height: 150px;
+            z-index: 10;
+            animation: bump 1s ease-in-out infinite;
+        }
+        @keyframes bump {
+            0%, 100% { transform: scale(1) translateY(0px); }
+            50% { transform: scale(1.1) translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <img src="images/gifs/FNF Logo.png" class="fnf-logo" alt="FNF Logo">
+    <img src="images/gifs/TADC logo.png" class="tadc-gif" alt="TADC Logo">
+    <img src="images/gif gf bucks.gif" class="floating-gif" alt="GF Bucks">
+    <div class="bio-container">
+        <h1>About Me</h1>
+        <p>
+            Hi Welcome to My bio Created by cosmicbunny.
+        </p>
+        <p>
+            Please know NO DRAMA!
+        </p>
+        <h2>My Interests</h2>
+        <p>
+            All My Intrests::
+        </p>
+        <ul>
+            <li>Coding </li>
+            <li>Digital art and design</li>
+            <li>Gaming</li>
+            <li>3D modeling</li>
+            <li>2D Art</li>
+            
+        </ul>
+        <h2>My Friend group</h2>
+        <p>
+            I cherish my friendships and have a great group of friends who support me. Some of my close friends include:
+        </p>
+        <ul>
+            <li>『ＫΛｉＴｈｅＢΛｎｄｉＴ』</li>
+            <li>twinArmageddon</li>
+            <li>Civilking</li>
+            <li>ベキシルム</li>
+            <li>Blackberrigoob</li>
+            <h3>And many More!</h3>
+            <H2>Taken By: Bloomy</H2>
+            
+        </ul>
+        <h2>Images and fun With friends</h2>
+        <p>
+            Here are some amazing memories and fun moments I've shared with my friends:
+        </p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="vrchat files/1.png" alt="VRChat memory 1">
+            </div>
+            <div class="gallery-item">
+                <img src="vrchat files/2.png" alt="VRChat memory 2">
+            </div>
+            <div class="gallery-item">
+                <img src="vrchat files/3.png" alt="VRChat memory 3">
+            </div>
+            <div class="gallery-item">
+                <img src="vrchat files/4.png" alt="VRChat memory 4">
+            </div>
+            <div class="gallery-item">
+                <img src="vrchat files/5.png" alt="VRChat memory 5">
+            </div>
+            <div class="gallery-item">
+                <img src="vrchat files/6.png" alt="VRChat memory 6">
+            </div>
+            <div class="gallery-item">
+                <img src="vrchat files/7.png" alt="VRChat memory 7">
+            </div>
+            <div class="gallery-item">
+                <img src="vrchat files/8.png" alt="VRChat memory 8">
+            </div>
+            <div class="gallery-item">
+                <img src="vrchat files/9.png" alt="VRChat memory 9">
+            </div>
+            </div>
+        </div>
+        <h2>My Models/Model Edits</h2>
+        <p>
+            Here are some of my 3D models and edits I've created:
+        </p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2025-12-07 124247.png" alt="Model 1">
+            </div>
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2026-02-24 220249.png" alt="Model 2">
+            </div>
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2026-02-25 203339.png" alt="Model 3">
+            </div>
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2026-02-26 173041.png" alt="Model 4">
+            </div>
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2026-02-28 223837.png" alt="Model 5">
+            </div>
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2026-03-03 011341.png" alt="Model 6">
+            </div>
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2026-03-03 182255.png" alt="Model 7">
+            </div>
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2026-02-25 205814.png" alt="Model 8">
+            </div>
+            <div class="gallery-item">
+                <img src="vrc models/Screenshot 2026-03-04 233355.png" alt="Model 9">
+            </div>
+        </div>
+    </div>
+    
+    </div>
+</body>
+</html>
